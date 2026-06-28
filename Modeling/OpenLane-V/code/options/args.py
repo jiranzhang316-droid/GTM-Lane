@@ -3,10 +3,10 @@ import argparse
 def parse_args(cfg):
     parser = argparse.ArgumentParser(description='Hello')
     parser.add_argument('--run_mode', type=str, default='test', help='run mode (train, test, or test_paper)')
-    parser.add_argument('--pre_dir', type=str, default='/root/autodl-tmp/RVLD/RVLD-main/preprocessed/OpenLane-V', help='preprocessed data dir')
+    parser.add_argument('--pre_dir', type=str, default='', help='preprocessed data dir')
     parser.add_argument('--dataset_dir', default=None,
                         help='dataset dir')
-    parser.add_argument('--paper_weight_dir', default='/root/autodl-tmp/RVLD/RVLD-main/TCA_pretrained/OpenLane-V', help='pretrained weights dir (paper)')
+    parser.add_argument('--paper_weight_dir', default='', help='pretrained weights dir (paper)')
     args = parser.parse_args()
 
     cfg = args_to_config(cfg, args)
