@@ -38,7 +38,7 @@ class Config(object):
 
         self.dir['proj'] = os.path.dirname(os.getcwd()) + '/'
         # ------------------- need to modify ------------------- #
-        self.dir['head_pre'] = '/root/autodl-tmp/RVLD/RVLD-main/preprocessed/OpenLane-V'
+        self.dir['head_pre'] = ''
         # ------------------------------------------------------ #
         self.dir['pre2'] = f'{self.dir["head_pre"]}/P02_SVD/output_training/pickle'
         self.dir['pre3_train'] = f'{self.dir["head_pre"]}/P03_video_based_datalist/output_training/pickle'
@@ -48,16 +48,16 @@ class Config(object):
 
         self.dir['out'] = f'{os.getcwd().replace("code", "output")}'
         self.dir['weight'] = f'{self.dir["out"]}/train/weight'
-        self.dir['pretrained_weight1'] = f'/root/autodl-tmp/RVLD/RVLD-main/Modeling/OpenLane-V/ILD_seg/output/train/weight'
-        self.dir['pretrained_weight2'] = f'/root/autodl-tmp/RVLD/RVLD-main/Modeling/OpenLane-V/ILD_coeff/output/train/weight'
-        self.dir['weight_paper'] = '/root/autodl-tmp/RVLD/RVLD-main/TCA_pretrained/OpenLane-V'
+        self.dir['pretrained_weight1'] = f''
+        self.dir['pretrained_weight2'] = f''
+        self.dir['weight_paper'] = ''
 
     def setting_for_dataset_path(self):
         self.dataset_name = 'openlane-v'  # ['tusimple', 'vil100']
         self.datalist = 'training'  # ['train'] only
 
         # ------------------- need to modify ------------------- #
-        self.dir['dataset'] = '/root/autodl-tmp/RVLD/RVLD-main/OpenLane'
+        self.dir['dataset'] = ''
         # ------------------------------------------------------ #
 
     def setting_for_image_param(self):
