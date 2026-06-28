@@ -1,0 +1,73 @@
+﻿# ===== Datasets (too large for git) =====
+VIL100/
+OpenLane/
+preprocessed/
+
+# ===== Pretrained / weight files =====
+pretrained/
+TCA_weight/
+*.pth
+*.pt
+*.pkl
+*.ckpt
+checkpoint_*
+**/weight/
+**/weights/
+
+# ===== Training outputs =====
+**/output/
+runs/
+wandb/
+
+# ===== Nested git repos =====
+**/.git/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== C/C++ build artifacts =====
+*.o
+*.obj
+*.pack
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== Logs / temp =====
+*.log
+*.out
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ===== Env / secrets =====
+.env
+.env.*
+*.key
+secrets/
