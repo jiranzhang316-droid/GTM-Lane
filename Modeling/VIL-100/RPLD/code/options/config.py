@@ -38,7 +38,7 @@ class Config(object):
 
         self.dir['proj'] = os.path.dirname(os.getcwd()) + '/'
         # ------------------- need to modify ------------------- #
-        self.dir['head_pre'] = '/root/autodl-tmp/RVLD/RVLD-main/preprocessed/VIL-100'
+        self.dir['head_pre'] = ''
         # ------------------------------------------------------ #
         self.dir['pre0_train'] = f'{self.dir["head_pre"]}/P00_data_processing/output_train/pickle'
         self.dir['pre0_test'] = f'{self.dir["head_pre"]}/P00_data_processing/output_test/pickle'
@@ -59,7 +59,7 @@ class Config(object):
         self.datalist = 'train'  # ['train'] only
 
         # ------------------- need to modify ------------------- #
-        self.dir['dataset'] = '/root/autodl-tmp/RVLD/RVLD-main/VIL-100'
+        self.dir['dataset'] = ''
         # ------------------------------------------------------ #
 
     def setting_for_image_param(self):
